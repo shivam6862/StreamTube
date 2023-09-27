@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.left {
+  flex: 1;
+}
+.right {
+  flex: 4;
+}
