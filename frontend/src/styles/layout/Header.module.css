@@ -1,2 +1,75 @@
 .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0.75rem 0.25rem 0.75rem;
+  gap: 0.5rem;
+}
+.left,
+.middle,
+.right,
+.leftDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.left {
+  flex: 2;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+.middle {
+  flex: 4;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.right {
+  flex: 2;
+  justify-content: flex-end;
+  gap: 0.75rem;
+}
+.leftDiv {
+  gap: 0;
+}
+.leftDiv > h2 {
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  padding-left: 0.4rem;
+}
+.input {
+  border: 1px solid var(--dark-color);
+  border-radius: 1.5rem;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 0.3rem 0.3rem;
+}
+.input > input {
+  all: unset;
+  font-size: 1.25rem;
+  word-wrap: break-word;
+  width: 95%;
+  background-color: var(--white-light-color);
+  padding-left: 1rem;
+  padding-right: 0.5rem;
+}
+.searchbutton {
+  padding-right: 0.4rem;
+}
+.microphone {
+  background-color: var(--light-dark-color);
+  border-radius: 50%;
+  width: 2.25rem;
+  height: 2.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.right {
+  cursor: pointer;
 }

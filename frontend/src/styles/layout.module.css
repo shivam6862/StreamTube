@@ -3,10 +3,11 @@
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
+  gap: 1.25rem;
 }
 .left {
   flex: 1;
 }
 .right {
-  flex: 4;
+  flex: 5;
 }

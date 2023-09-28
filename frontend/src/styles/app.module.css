@@ -1,2 +1,51 @@
 .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.25rem;
+  margin-top: 1rem;
+  width: -webkit-fill-available;
+  position: relative;
+}
+.top {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1.25rem;
+  overflow-x: scroll;
+  background-color: var(--white-light-color);
+  padding-bottom: 0.5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  opacity: 0.7;
+}
+.topitem {
+  font-size: 1rem;
+  padding: 0.4rem;
+  border: 1px solid var(--light-dark-color);
+  border-radius: 10px;
+  text-transform: capitalize;
+  text-wrap: nowrap;
+  background-color: var(--light-dark-color);
+  opacity: 0.9;
+}
+.bottom {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2rem;
+  padding-top: 3rem;
+  height: 93vh;
+  overflow-y: scroll;
+}
+.bottom > a {
+  all: unset;
+  cursor: pointer;
 }

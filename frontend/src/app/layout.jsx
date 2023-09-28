@@ -5,8 +5,8 @@ const oxanium = Oxanium({ subsets: ["latin"] });
 
 import Script from "next/script";
 
-import Header from "../components/header/header";
-import NavigationMenu from "../components/navigationMenu/navigationMenu";
+import Header from "../components/header/Header";
+import NavigationMenu from "../components/navigationMenu/NavigationMenu";
 import classes from "../styles/layout.module.css";
 
 export const metadata = {
@@ -27,7 +27,6 @@ export default function RootLayout({ children }) {
           </div>
           <div className={classes.right}>{children}</div>
         </div>
-
         <Script />
       </body>
     </html>

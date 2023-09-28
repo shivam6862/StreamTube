@@ -1,23 +1,16 @@
 "use client";
+import classes from "../../styles/subscriptions.module.css";
+import pageData from "../../../public/pageData.json";
+import singlevideo from "../../../public/singlevideo.json";
 import Link from "next/link";
-import VideoCard from "../components/VideoCard";
-import classes from "../styles/app.module.css";
-import pageData from "../../public/pageData.json";
-import singlevideo from "../../public/singlevideo.json";
+import VideoCard from "../../components/VideoCard";
 
-export default function Home() {
-  const topNav = pageData.data;
+const subscriptions = () => {
   const video = pageData.video;
 
   return (
     <div className={classes.container}>
-      <div className={classes.top}>
-        {topNav.map((item, index) => (
-          <div key={index} className={classes.topitem}>
-            {item}
-          </div>
-        ))}
-      </div>
+      <h2>Latest</h2>
       <div className={classes.bottom}>
         {video.map((item, index) => (
           <Link href={singlevideo.videoLink}>
@@ -36,4 +29,6 @@ export default function Home() {
       </div>
     </div>
   );
-}
+};
+
+export default subscriptions;
