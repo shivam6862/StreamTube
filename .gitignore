@@ -9,3 +9,4 @@ backend/package-lock.json
 
 frontend/public/singlevideo.json
 frontend/public/pageData.json
+frontend/public/histroyData.json

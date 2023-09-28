@@ -7,6 +7,7 @@ import { BiSolidVideoPlus } from "react-icons/bi";
 import { BsBell } from "react-icons/bs";
 import { BiSolidUserCircle } from "react-icons/bi";
 import classes from "../../styles/layout/Header.module.css";
+import Link from "next/link";
 
 const Header = ({}) => {
   const size = 24;
@@ -15,10 +16,12 @@ const Header = ({}) => {
     <div className={classes.container}>
       <div className={classes.left}>
         <RxHamburgerMenu size={size} />
-        <div className={classes.leftDiv}>
-          <TbBrandYoutube size={size} />
-          <h2>StreamTube</h2>
-        </div>
+        <Link href={"/"}>
+          <div className={classes.leftDiv}>
+            <TbBrandYoutube size={size} />
+            <h2>StreamTube</h2>
+          </div>
+        </Link>
       </div>
       <div className={classes.middle}>
         <div className={classes.input}>

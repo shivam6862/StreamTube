@@ -1,0 +1,111 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1rem;
+  width: -webkit-fill-available;
+}
+.box {
+  flex: 4;
+  padding-left: 1rem;
+  height: 93vh;
+  overflow-y: scroll;
+}
+.box > h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 1.5rem;
+  padding: 1rem 0rem;
+}
+.histroy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+.eachDayHistroy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+.eachDayHistroy > h2 {
+  padding: 0;
+  margin: 0;
+  font-size: 1.1rem;
+  padding-left: 1rem;
+}
+.shortDiv {
+}
+.shortDiv > h3 {
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  padding-bottom: 0.5rem;
+  padding-left: 2rem;
+}
+.eachDayHistroyItemsShort {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1rem;
+  width: 50vw;
+  overflow-x: scroll;
+}
+.eachDayHistroyItemsShort > a {
+  all: unset;
+  cursor: pointer;
+}
+.videoDiv {
+}
+.videoDiv > h3 {
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  padding-bottom: 0.5rem;
+  padding-left: 2rem;
+}
+.eachDayHistroyItems {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+.eachDayHistroyItems > a {
+  all: unset;
+  cursor: pointer;
+}
+.navigation {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2rem;
+  padding-top: 6rem;
+}
+.navigation > a {
+  all: unset;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+@media screen and (max-width: 900px) {
+  .container {
+    flex-direction: column-reverse;
+    gap: 3rem;
+  }
+  .navigation {
+    padding-top: 3rem;
+  }
+}
