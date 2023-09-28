@@ -46,7 +46,7 @@ const data = {
     {
       element: "your videos",
       icon: <FaVideo size={size} />,
-      href: "yourVideos",
+      href: "channel",
     },
     {
       element: "watch later",
