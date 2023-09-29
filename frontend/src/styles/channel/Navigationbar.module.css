@@ -44,6 +44,7 @@
 .element:hover {
   background-color: var(--light-dark-color);
   cursor: pointer;
+  color: #cc0000;
 }
 .element:hover > .icon {
   scale: 1.2;
