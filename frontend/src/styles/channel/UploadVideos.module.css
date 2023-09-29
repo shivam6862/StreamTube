@@ -1,0 +1,101 @@
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+.box {
+  min-width: 60vw;
+  min-height: 80vh;
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  border-radius: 1rem;
+  animation: middle-top 0.5s;
+}
+.top {
+  border-bottom: 1px solid black;
+  width: -webkit-fill-available;
+  padding: 1rem 1rem 0.4rem 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.topleft {
+  font-weight: bold;
+  font-size: 1rem;
+}
+.topright {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+}
+.topright > svg {
+  cursor: pointer;
+}
+.middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: -webkit-fill-available;
+  padding: 0rem 1rem;
+}
+.uploadbutton {
+  background-color: #d8d8d8;
+  padding: 1rem;
+  border-radius: 50%;
+}
+.middle > p {
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+}
+.middle > button {
+  all: unset;
+  background-color: #065fd4;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+.bottom {
+  text-align: center;
+  padding: 0rem 1rem;
+}
+.bottom > p {
+  padding: 0;
+  margin: 0;
+  font-size: 0.8rem;
+  padding: 1rem 0rem;
+}
+.bottom > p > span {
+  color: #065fd4;
+  cursor: pointer;
+}
+@keyframes middle-top {
+  from {
+    transform: translateY(-25%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+@media screen and (max-width: 900px) {
+  .box {
+    min-width: 80vh;
+  }
+}

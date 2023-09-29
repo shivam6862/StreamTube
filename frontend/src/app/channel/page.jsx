@@ -2,12 +2,46 @@
 import classes from "../../styles/channel/Channel.module.css";
 import Navigationbar from "../../components/channels/Navigationbar";
 import pageData from "../../../public/pageData.json";
+import { useState } from "react";
+import Backdrop from "../../ui/Backdrop";
+import UploadVideos from "../../components/channels/UploadVideos";
+import FinalUploadVideoSetUp from "../../components/channels/FinalUploadVideoSetUp";
 
 const channel = () => {
   const image = pageData.image;
 
+  const [toggleUploadVideo, setToggleUploadVideo] = useState(false);
+  const [openFinalupload, setOpenFinalupload] = useState(false);
+
+  const uploadVideoHide = () => {
+    setToggleUploadVideo(false);
+  };
+  const uploadVideoShow = () => {
+    setToggleUploadVideo(true);
+  };
+
+  const FinaluploadVideoHide = () => {
+    setOpenFinalupload(false);
+  };
+  const FinaluploadVideoShow = () => {
+    setOpenFinalupload(true);
+  };
+
   return (
     <div className={classes.container}>
+      {toggleUploadVideo && <Backdrop onClick={uploadVideoHide} />}
+      {toggleUploadVideo && (
+        <UploadVideos
+          uploadVideoHide={uploadVideoHide}
+          FinaluploadVideoShow={FinaluploadVideoShow}
+        />
+      )}
+
+      {openFinalupload && <Backdrop onClick={FinaluploadVideoHide} />}
+      {openFinalupload && (
+        <FinalUploadVideoSetUp FinaluploadVideoHide={FinaluploadVideoHide} />
+      )}
+
       <div className={classes.left}>
         <Navigationbar />
       </div>
@@ -17,7 +51,7 @@ const channel = () => {
             <img src={image} alt="img" />
             <p>Want to see metrics on your recent video?</p>
             <p>Upload and publish a video to get started.</p>
-            <button>Upload videos</button>
+            <button onClick={uploadVideoShow}>Upload videos</button>
           </div>
         </div>
         <div className={classes.rightitem}>
