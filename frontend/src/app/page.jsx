@@ -20,7 +20,7 @@ export default function Home() {
       </div>
       <div className={classes.bottom}>
         {video.map((item, index) => (
-          <Link href={singlevideo.videoLink}>
+          <Link href={singlevideo.videoLink} key={index}>
             <VideoCard
               title={singlevideo.title}
               channel={singlevideo.channel}

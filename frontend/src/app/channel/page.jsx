@@ -1,9 +1,11 @@
 "use client";
 import classes from "../../styles/channel/Channel.module.css";
 import Navigationbar from "../../components/channels/Navigationbar";
-import { image } from "../../../public/pageData.json";
+import pageData from "../../../public/pageData.json";
 
 const channel = () => {
+  const image = pageData.image;
+
   return (
     <div className={classes.container}>
       <div className={classes.left}>

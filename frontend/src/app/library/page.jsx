@@ -49,7 +49,7 @@ const library = () => {
               <h2>{section}</h2>
               <div className={classes.bottom}>
                 {elements.data.map((element, index) => (
-                  <Link href={singlevideo.videoLink}>
+                  <Link href={singlevideo.videoLink} key={index}>
                     <LibraryVideoCard
                       title={singlevideo.title}
                       channel={singlevideo.channel}
