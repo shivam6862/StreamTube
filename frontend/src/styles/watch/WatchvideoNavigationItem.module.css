@@ -2,31 +2,20 @@
   display: flex;
   flex-direction: row;
   gap: 1rem;
-  padding: 0.3rem;
   width: -webkit-fill-available;
-}
-.videocard:hover {
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-.firstpart {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 .videocard_imgBox {
   display: flex;
   position: relative;
   padding: 0;
-  height: 125px;
+  height: 110px;
 }
 .videocard_imgBox > img {
-  height: 125px;
-  width: 225px;
+  height: 110px;
+  width: 190px;
   border-radius: 10px;
 }
-.videocard_imgBox:hover {
+.videocard_imgBox > img:hover {
   border-radius: 0px;
 }
 .videocard_imgBox > p {
@@ -44,7 +33,7 @@
 }
 .videocard_info {
   display: flex;
-  gap: 1rem;
+  gap: 0.7rem;
   margin-top: 0.7em;
 }
 .videocard_text {
@@ -57,10 +46,10 @@
   flex-wrap: wrap;
 }
 .videocard_text > h5 {
-  font-size: 14px;
+  font-size: 13px;
   margin: 0;
-  margin-bottom: 0.4rem;
-  line-height: 1.3rem;
+  margin-bottom: 0.3rem;
+  line-height: 1rem;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
@@ -69,10 +58,10 @@
   max-width: 200px;
 }
 .videocard_text p {
-  font-size: small;
+  font-size: 11px;
   color: gray;
   margin: 0;
-  margin-bottom: 0.3em;
+  padding: 0;
 }
 .videocard_text h5 {
   color: #000;

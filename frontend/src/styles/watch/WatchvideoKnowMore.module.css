@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  width: -webkit-fill-available;
+  padding: 1rem 0.4rem;
+  background-color: white;
+  border-radius: 8px;
+}
+.box {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  width: -webkit-fill-available;
+}
+.views {
+  font-size: 1rem;
+}
+.date {
+  font-size: 0.9rem;
+}
+.tags {
+  font-size: 0.85rem;
+}
+.title {
+  font-size: 0.95rem;
+}
+.title > span {
+  color: blue;
+  cursor: pointer;
+}
+@media screen and (max-width: 920px) {
+  .container {
+    margin-right: 1rem;
+  }
+}

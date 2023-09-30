@@ -1,0 +1,147 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1rem;
+  width: -webkit-fill-available;
+  padding-bottom: 1rem;
+}
+.heading_comment_count {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.user_comment_input {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1rem;
+  width: -webkit-fill-available;
+  padding-bottom: 1rem;
+}
+.user_comment_input > img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+.user_comment_input > input {
+  all: unset;
+  width: -webkit-fill-available;
+  border-bottom: 1px solid #c2c2c2;
+  padding: 0.4rem 1rem;
+  border-radius: 5px;
+  text-transform: capitalize;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1rem;
+  width: -webkit-fill-available;
+}
+.eachitem {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  width: -webkit-fill-available;
+}
+.userimage {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.userimage > img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.aboutuser {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.3rem;
+  width: -webkit-fill-available;
+}
+.channelname_time {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+.channelname {
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.time {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #7f7f7f;
+}
+.message {
+  font-size: 0.75rem;
+}
+.like_dislike {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.7rem;
+}
+.like_dislike > svg:hover {
+  color: #71beff;
+  scale: 1.1;
+  cursor: pointer;
+}
+.like_dislike > button {
+  all: unset;
+  color: #000;
+  padding: 0.2rem 0.2rem;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.like_dislike > button:hover {
+  border-radius: 10px;
+  background-color: #71beff;
+}
+.replies {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+.replies_button {
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 16px;
+  padding: 0.2rem 0.7rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+}
+.replies_button:hover {
+  background-color: #71beff;
+}
+.replies_button > svg {
+  scale: 1.05;
+  cursor: pointer;
+}
+@media screen and (max-width: 920px) {
+  .container {
+    margin-right: 1rem;
+  }
+}

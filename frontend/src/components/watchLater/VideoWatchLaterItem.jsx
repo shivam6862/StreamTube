@@ -8,8 +8,8 @@ import Link from "next/link";
 const VideoWatchLaterItem = () => {
   return (
     <div className={classes.container}>
-      <Link href={`${singlevideo.videoLink}`}>
-        {video.map((item, index) => (
+      {video.map((item, index) => (
+        <Link href={`${singlevideo.videoLink}`} key={index}>
           <WatchLaterVideoCard
             title={singlevideo.title}
             channel={singlevideo.channel}
@@ -19,8 +19,8 @@ const VideoWatchLaterItem = () => {
             thumbnail={singlevideo.thumbnail}
             key={index}
           />
-        ))}
-      </Link>
+        </Link>
+      ))}
     </div>
   );
 };

@@ -7,14 +7,13 @@
 }
 .box {
   width: 60vw;
-  height: 80vh;
   background-color: white;
   color: black;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 1rem;
+  gap: 0.2rem;
   border-radius: 1rem;
   animation: middle-top 0.5s;
 }
@@ -48,13 +47,261 @@
 .topright > svg {
   cursor: pointer;
 }
+.overflowscroll {
+  height: 75vh;
+  overflow-y: scroll;
+  padding: 0.2rem 1rem;
+}
 .middle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1.5rem;
+  padding-bottom: 2rem;
+}
+.middleitem {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  padding: 0.25rem;
+  position: relative;
+}
+.middleitem > svg {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  z-index: 1;
+  background-color: white;
+}
+.middleitem:after {
+  content: "  ";
+  display: block;
+  border-bottom: 1px solid blue;
+  width: 19.1vw;
+  position: absolute;
+  top: 140%;
+  left: 56%;
+}
+.middleitem:nth-child(4):after {
+  display: none;
 }
 .bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  gap: 0.5rem;
+  padding-bottom: 1rem;
 }
 .bottomleft {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+.bottomlefttop {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: -webkit-fill-available;
+}
+.bottomlefttop1 {
+  text-transform: capitalize;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.bottomlefttop2 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 600;
+  color: blue;
+}
+.textareas {
+  width: -webkit-fill-available;
+  position: relative;
+}
+.textareaHeading {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  gap: 0.5rem;
+  text-transform: capitalize;
+}
+.textareas > textarea {
+  all: unset;
+  width: -webkit-fill-available;
+  border: 1px solid black;
+  border-radius: 6px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+  caret-color: blue;
+  padding-top: 1.7rem;
+  text-transform: capitalize;
+}
+.thumbnail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+.thumbnail > h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+}
+.thumbnail > p {
+  margin: 0;
+  padding: 0;
+  font-size: 0.9rem;
+}
+.thumbnail > p > span {
+  color: blue;
+}
+.thumbnailanimationcontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  width: -webkit-fill-available;
+}
+.thumbnailanimationfirst {
+  width: 49%;
+  height: 125px;
+  border: 1px solid black;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    to right,
+    #f6f7f8 0%,
+    #edeef1 10%,
+    #f6f7f8 20%,
+    #f6f7f8 100%
+  );
+  background-size: 200% 100%;
+  animation: bgPos 1s linear infinite;
+  position: relative;
+}
+.svgquestion {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  z-index: 2;
+}
+.thumbnailanimation {
+  width: 49%;
+  height: 125px;
+  border: 1px solid black;
+  border-radius: 4px;
+  background-image: linear-gradient(
+    to right,
+    #f6f7f8 0%,
+    #edeef1 10%,
+    #f6f7f8 20%,
+    #f6f7f8 100%
+  );
+  background-size: 200% 100%;
+  animation: bgPos 1s linear infinite;
+  position: relative;
 }
 .bottomright {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+  padding-top: 1.7rem;
+  width: -webkit-fill-available;
+}
+.videoiframe {
+  width: -webkit-fill-available;
+  height: 200px;
+  border-radius: 8px;
+  padding-right: 1rem;
+}
+.videoiframe > iframe {
+  all: unset;
+  height: 200px;
+  border-radius: 8px;
+  border: 1px solid black;
+  width: -webkit-fill-available;
+}
+.videolink {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  width: -webkit-fill-available;
+  padding-right: 1rem;
+}
+.videolinkitem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.videolinkitem > p {
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.videolinkitem > h5 {
+  padding: 0;
+  margin: 0;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: blue;
+  cursor: pointer;
+}
+.videolinkitem > svg {
+  cursor: pointer;
+}
+.videolinkitem > svg:hover {
+  scale: 1.05;
+}
+.filename {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.filename > p {
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.filename > h5 {
+  padding: 0;
+  margin: 0;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+@keyframes bgPos {
+  0% {
+    background-position: 50% 0;
+  }
+
+  100% {
+    background-position: -150% 0;
+  }
 }
 @keyframes middle-top {
   from {
@@ -64,8 +311,56 @@
     transform: translateY(0%);
   }
 }
-@media screen and (max-width: 900px) {
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  width: -webkit-fill-available;
+  padding: 0.5rem 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+}
+.footerleft {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+  font-size: 0.8rem;
+}
+.footerright {
+}
+.footerright > button {
+  all: unset;
+  background-color: #065fd4;
+  color: #fff;
+  padding: 0.3rem 1rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+@media screen and (max-width: 1040px) {
   .box {
-    min-width: 80vh;
+    min-width: 80vw;
+  }
+  .bottom {
+    flex-direction: column-reverse;
+  }
+  .bottomright {
+    padding-top: 0.2rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .thumbnailanimationfirst {
+    width: 98%;
+  }
+  .thumbnailanimation {
+    width: 98%;
   }
 }
