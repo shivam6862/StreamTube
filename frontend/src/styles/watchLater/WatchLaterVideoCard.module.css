@@ -4,6 +4,7 @@
   gap: 1rem;
   padding: 0.3rem;
   width: -webkit-fill-available;
+  margin: 0rem 0.5rem;
 }
 .videocard:hover {
   border-radius: 10px;

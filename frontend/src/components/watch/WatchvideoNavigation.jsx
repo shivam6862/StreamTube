@@ -1,13 +1,20 @@
 "use client";
 import classes from "../../styles/watch/WatchvideoNavigation.module.css";
 import Link from "next/link";
-import { video } from "../../../public/pageData.json";
+import { video, data } from "../../../public/pageData.json";
 import singlevideo from "../../../public/singlevideo.json";
 import WatchvideoNavigationItem from "./WatchvideoNavigationItem";
 
 const WatchvideoNavigation = () => {
   return (
     <div className={classes.container}>
+      <div className={classes.top}>
+        {data.map((item, index) => (
+          <div key={index} className={classes.topitem}>
+            {item}
+          </div>
+        ))}
+      </div>
       <div className={classes.box}>
         {video.map((item, index) => (
           <Link href={`${singlevideo.videoLink}`} key={index}>

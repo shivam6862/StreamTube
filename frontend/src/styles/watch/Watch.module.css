@@ -37,6 +37,7 @@
   flex: 3;
   gap: 2rem;
   padding-bottom: 1rem;
+  width: -webkit-fill-available;
 }
 @media screen and (max-width: 920px) {
   .box {

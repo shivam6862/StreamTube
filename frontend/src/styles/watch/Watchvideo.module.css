@@ -23,7 +23,7 @@
   all: unset;
   border: 0.5px solid black;
   width: -webkit-fill-available;
-  height: 380px;
+  height: 480px;
   border-radius: 0.75rem;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
