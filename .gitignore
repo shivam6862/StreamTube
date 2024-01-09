@@ -3,10 +3,14 @@ frontend/package-lock.json
 frontend/.next
 frontend/.env
 
-backend/.env
-backend/node_modules
-backend/package-lock.json
+backend/mvnw
+backend/mvnw.cmd
+backend/src/main/resources/application.properties
+backend/.mvn
+backend/target
 
 frontend/public/singlevideo.json
 frontend/public/pageData.json
 frontend/public/histroyData.json
+
+.vscode
