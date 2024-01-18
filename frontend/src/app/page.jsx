@@ -4,10 +4,21 @@ import VideoCard from "../components/VideoCard";
 import classes from "../styles/app.module.css";
 import pageData from "../../public/pageData.json";
 import singlevideo from "../../public/singlevideo.json";
+import { useNotification } from "@/hooks/useNotification";
+import { useEffect } from "react";
 
 export default function Home() {
+  const { NotificationHandler } = useNotification();
   const topNav = pageData.data;
   const video = pageData.video;
+
+  useEffect(() => {
+    NotificationHandler(
+      "StreamTube",
+      "Home page show Successfully! ",
+      "Success"
+    );
+  }, []);
 
   return (
     <div className={classes.container}>

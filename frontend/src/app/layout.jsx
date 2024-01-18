@@ -9,6 +9,9 @@ import Header from "../components/header/Header";
 import NavigationMenu from "../components/navigationMenu/NavigationMenu";
 import classes from "../styles/layout.module.css";
 
+import { NotificationContextProvider } from "@/contexts/Notification-context";
+import Notifications from "@/components/notification/Notifications";
+
 export const metadata = {
   title: "StreamTube",
   description: "StreamTube",
@@ -20,14 +23,17 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <meta name="viewport" content="initial-scale=1, width=device-width" />
       <body className={oxanium.className}>
-        <Header />
-        <div className={classes.container}>
-          <div className={classes.left}>
-            <NavigationMenu />
+        <NotificationContextProvider>
+          <Notifications />
+          <Header />
+          <div className={classes.container}>
+            <div className={classes.left}>
+              <NavigationMenu />
+            </div>
+            <div className={classes.right}>{children}</div>
           </div>
-          <div className={classes.right}>{children}</div>
-        </div>
-        <Script />
+          <Script />
+        </NotificationContextProvider>
       </body>
     </html>
   );
